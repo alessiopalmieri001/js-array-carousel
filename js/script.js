@@ -22,13 +22,25 @@ const contenitoreImg = document.querySelector('.contenitoreimg')
 
 for (let i = 0; i < imgArray.length; i++) {
 
-    contenitoreImg.innerHTML += `
-                                <div class="item"> 
-                                    <img src="img/01.webp" alt="img">
-                                </div>
-                                `
+    if (i == 0){
+        contenitoreImg.innerHTML += `
+                                    <div class="item active"> 
+                                        <img src="${imgArray[i]}" alt="img">
+                                    </div>
+                                    `;
+    }
+    else {
+        contenitoreImg.innerHTML += `
+                                    <div class="item"> 
+                                        <img src="${imgArray[i]}" alt="img">
+                                    </div>
+                                    `;
+    }                                
 
 }
 
+buttonDown.addEventListener('click' , function() {
 
+
+});
 
