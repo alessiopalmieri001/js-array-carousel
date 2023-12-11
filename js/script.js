@@ -8,30 +8,27 @@ const buttonDown = document.getElementById('down');
 console.log(buttonDown);
 
 const imgArray = [
-    '01.webp',  
-    '02.webp',
-    '03.webp',
-    '04.webp',
-    '05.webp',
+    './img/01.webp',  
+    './img/02.webp',
+    './img/03.webp',
+    './img/04.webp',
+    './img/05.webp',
 ];
 
-let nWebp = '';
+console.log('imgArray', imgArray , imgArray.length, typeof imgArray)
 
+
+const contenitoreImg = document.querySelector('.contenitoreimg')
 
 for (let i = 0; i < imgArray.length; i++) {
-    nWebp += `
-                
-                    <img src="./img/${ imgArray[i] }">
-                    <button id="up">
-                    <i class="fa-solid fa-chevron-up"></i>
-                    </button>
-                    <button id="down">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                
-            `;
-    
-};
 
-const contenitoreImg = document.querySelector('.contenitoreimg').innerHTML = nWebp;
+    contenitoreImg.innerHTML += `
+                                <div class="item"> 
+                                    <img src="img/01.webp" alt="img">
+                                </div>
+                                `
+
+}
+
+
 
