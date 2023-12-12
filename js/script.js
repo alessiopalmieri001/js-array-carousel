@@ -1,11 +1,7 @@
 
 
 
-const buttonUp = document.getElementById('up');
-console.log(buttonUp);
 
-const buttonDown = document.getElementById('down');
-console.log(buttonDown);
 
 const imgArray = [
     './img/01.webp',  
@@ -39,8 +35,25 @@ for (let i = 0; i < imgArray.length; i++) {
 
 }
 
+
+const buttonUp = document.querySelector('#up');
+console.log(buttonUp);
+
+const buttonDown = document.querySelector('#down');
+console.log(buttonDown);
+
+
+const allItems = document.querySelectorAll('.item')
+console.log(allItems)
+
+let immagineActive = 0;
+
 buttonDown.addEventListener('click' , function() {
 
+    allItems[immagineActive].classList.remove('.active');
 
+    immagineActive ++;
+
+    allItems[immagineActive].classList.remove.add('.active');
 });
 
