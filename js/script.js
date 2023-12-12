@@ -50,10 +50,20 @@ let immagineActive = 0;
 
 buttonDown.addEventListener('click' , function() {
 
-    allItems[immagineActive].classList.remove('.active');
+    allItems[immagineActive].classList.remove('active');
 
     immagineActive ++;
 
-    allItems[immagineActive].classList.remove.add('.active');
+    allItems[immagineActive].classList.add('active');
 });
 
+
+
+buttonUp.addEventListener('click' , function() {
+
+    allItems[immagineActive].classList.remove('active');
+
+    immagineActive --;
+
+    allItems[immagineActive].classList.add('active');
+});
