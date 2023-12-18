@@ -60,6 +60,14 @@ function myfunction(){
 
 }
 
+const stop = document.getElementById('stop')
+
+stop.addEventListener('click', function(){
+
+    clearInterval(carosel)
+
+});
+
 
 /* buttonDown.addEventListener('click' , function() {
 
