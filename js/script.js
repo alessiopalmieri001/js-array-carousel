@@ -32,7 +32,7 @@ for (let i = 0; i < imgArray.length; i++) {
                                     </div>
                                     `;
     }                                
-
+   
 }
 
 
@@ -48,15 +48,27 @@ console.log(allItems)
 
 let immagineActive = 0;
 
-buttonDown.addEventListener('click' , function() {
+let carosel = setInterval(myfunction, 3000);
+
+function myfunction(){
 
     allItems[immagineActive].classList.remove('active');
 
     immagineActive ++;
 
     allItems[immagineActive].classList.add('active');
-});
 
+}
+
+
+/* buttonDown.addEventListener('click' , function() {
+
+    allItems[immagineActive].classList.remove('active');
+
+    immagineActive ++;
+
+    allItems[immagineActive].classList.add('active');
+}); */
 
 
 buttonUp.addEventListener('click' , function() {
