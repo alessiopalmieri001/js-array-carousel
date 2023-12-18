@@ -87,3 +87,7 @@ buttonUp.addEventListener('click' , function() {
 
     allItems[immagineActive].classList.add('active');
 });
+
+
+
+console.log(this);
